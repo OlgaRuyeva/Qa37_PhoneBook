@@ -1,8 +1,14 @@
 package manager;
 
+import models.User;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class HelperUser extends HelperBase{
     public HelperUser(WebDriver wd) {
@@ -11,7 +17,6 @@ public class HelperUser extends HelperBase{
     public void openLoginRegistrationForm(){
         //WebElement loginTab = wd.findElement(By.cssSelector("a[href='/login']"));
                                                            //xpath "//a[text()='LOGIN']"
-
        // loginTab.click();
         click(By.cssSelector("a[href='/login']"));
     }
@@ -30,13 +35,34 @@ public class HelperUser extends HelperBase{
         type(By.xpath("//*[@name ='password']"),password);
 
     }
+    public void fillLoginRegistrationForm(User user){
+        type(By.name("email"), user.getEmail());
+        type(By.xpath("//*[@name ='password']"), user.getPasswort());
+
+    }
     public void submitLogin(){
         click(By.xpath("//*[text()='Login']"));
     }
+    public void submitRegistration(){
+        click(By.xpath("//*[text()='Registration']"));
+    }
     public boolean isLogged(){
-return isElementPresent(By.xpath("//button[text()='Sign Out']"));
+    return isElementPresent(By.xpath("//button[text()='Sign Out']"));
     }
     public void logout(){
         click(By.xpath("//button[text()='Sign Out']"));
+    }
+
+    public boolean isAlertPresent(String message) {
+        WebDriverWait wait = new WebDriverWait(wd, Duration.ofSeconds(5));
+        Alert alert = wait.until(ExpectedConditions.alertIsPresent());
+        if(alert!=null && alert.getText().contains(message)){
+            System.out.println(alert.getText());
+
+            alert.accept();//этим мы делаем клик на кнопку ок
+            //alert.dismiss();//этим мы кликаем на кнопку кенсел
+            return true;
+        }
+        return false;
     }
 }
