@@ -7,7 +7,7 @@ public class User {
         this.email = email;
         return this;
     }
-    public User setPasswort(String passwort) {
+    public User setPassword(String passwort) {
         this.passwort = passwort;
         return this;
     }

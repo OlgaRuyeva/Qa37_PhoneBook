@@ -21,7 +21,7 @@ public class RegistrationTests extends TestBase{
         int i = random.nextInt(1000);
         System.out.println(i);
 
-        User user = new User().setEmail("oo220719"+i+"@gmail.com").setPasswort("OO220719!oo");
+        User user = new User().setEmail("oo220719"+i+"@gmail.com").setPassword("OO220719!oo");
 
         app.getHelperUser().openLoginRegistrationForm();
         app.getHelperUser().fillLoginRegistrationForm(user);
@@ -33,7 +33,7 @@ public class RegistrationTests extends TestBase{
         Random random = new Random();
         int i = random.nextInt(1000);
         System.out.println(i);
-        User user = new User().setEmail("oo220719" + i + "gmail.com").setPasswort("OO220719!oo");
+        User user = new User().setEmail("oo220719" + i + "gmail.com").setPassword("OO220719!oo");
 
         app.getHelperUser().openLoginRegistrationForm();
         app.getHelperUser().fillLoginRegistrationForm(user);
@@ -42,8 +42,8 @@ public class RegistrationTests extends TestBase{
 
     }
     @Test
-    public void RegistrationWrongPasswort(){
-        User user = new User().setEmail("oo220719@gmail.com").setPasswort("OO22");
+    public void RegistrationWrongPassword(){
+        User user = new User().setEmail("oo220719@gmail.com").setPassword("OO22");
         app.getHelperUser().openLoginRegistrationForm();
         app.getHelperUser().fillLoginRegistrationForm(user);
         app.getHelperUser().submitLogin();

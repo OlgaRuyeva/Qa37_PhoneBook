@@ -35,7 +35,7 @@ public class LoginTests extends TestBase{
         Assert.assertTrue(app.getHelperUser().isAlertPresent("Wrong email or password"));
     }
     @Test
-    public void loginWrongPasswort(){
+    public void loginWrongPassword(){
         app.getHelperUser().openLoginRegistrationForm();
         app.getHelperUser().fillLoginRegistrationForm("oo220719@gmail.com","OOoo");
         app.getHelperUser().submitLogin();
