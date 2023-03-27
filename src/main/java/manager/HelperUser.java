@@ -61,8 +61,11 @@ public class HelperUser extends HelperBase{
 
             alert.accept();//этим мы делаем клик на кнопку ок
             //alert.dismiss();//этим мы кликаем на кнопку кенсел
+            //alert.sendKeys("hello");если надо чтот о напечатать в алерт
             return true;
         }
         return false;
     }
+    //Alert alert = wait.until(ExpectedConditions.alertIsPresent());
+
 }

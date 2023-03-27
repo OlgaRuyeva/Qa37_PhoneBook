@@ -28,5 +28,25 @@ public class RegistrationTests extends TestBase{
         app.getHelperUser().submitRegistration();
         Assert.assertTrue(app.getHelperUser().isLogged(),".contact-page_message__2qafk");
     }
+    @Test
+    public void RegistrationWrongEmail () {
+        Random random = new Random();
+        int i = random.nextInt(1000);
+        System.out.println(i);
+        User user = new User().setEmail("oo220719" + i + "gmail.com").setPasswort("OO220719!oo");
 
-}
+        app.getHelperUser().openLoginRegistrationForm();
+        app.getHelperUser().fillLoginRegistrationForm(user);
+        app.getHelperUser().submitRegistration();
+        Assert.assertTrue(app.getHelperUser().isAlertPresent("Wrong email or password format"));
+
+    }
+    @Test
+    public void RegistrationWrongPasswort(){
+        User user = new User().setEmail("oo220719@gmail.com").setPasswort("OO22");
+        app.getHelperUser().openLoginRegistrationForm();
+        app.getHelperUser().fillLoginRegistrationForm(user);
+        app.getHelperUser().submitLogin();
+        Assert.assertTrue(app.getHelperUser().isAlertPresent("Wrong email or password"));
+    }
+    }
