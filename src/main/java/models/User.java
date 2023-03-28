@@ -2,27 +2,27 @@ package models;
 
 public class User {
     private String email;
-    private String passwort;
+    private String password;
     public User setEmail(String email) {
         this.email = email;
         return this;
     }
     public User setPassword(String passwort) {
-        this.passwort = passwort;
+        this.password = passwort;
         return this;
     }
     public String getEmail() {
         return email;
     }
-    public String getPasswort() {
-        return passwort;
+    public String getPassword() {
+        return password;
     }
 
     @Override
     public String toString() {
         return "User{" +
                 "email='" + email + '\'' +
-                ", passwort='" + passwort + '\'' +
+                ", passwort='" + password + '\'' +
                 '}';
     }
 }
