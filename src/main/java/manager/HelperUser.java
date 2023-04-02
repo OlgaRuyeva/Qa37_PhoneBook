@@ -37,35 +37,57 @@ public class HelperUser extends HelperBase{
     }
     public void fillLoginRegistrationForm(User user){
         type(By.name("email"), user.getEmail());
-        type(By.xpath("//*[@name ='password']"), user.getPasswort());
+        type(By.xpath("//*[@name ='password']"), user.getPassword());
 
     }
     public void submitLogin(){
+
         click(By.xpath("//*[text()='Login']"));
     }
     public void submitRegistration(){
+
         click(By.xpath("//*[text()='Registration']"));
     }
     public boolean isLogged(){
     return isElementPresent(By.xpath("//button[text()='Sign Out']"));
     }
     public void logout(){
+
         click(By.xpath("//button[text()='Sign Out']"));
     }
 
     public boolean isAlertPresent(String message) {
         WebDriverWait wait = new WebDriverWait(wd, Duration.ofSeconds(5));
         Alert alert = wait.until(ExpectedConditions.alertIsPresent());
-        if(alert!=null && alert.getText().contains(message)){
-            System.out.println(alert.getText());
+        System.out.println(alert.getText());
+        if(alert!=null && alert.getText().equals(message)){
 
             alert.accept();//этим мы делаем клик на кнопку ок
             //alert.dismiss();//этим мы кликаем на кнопку кенсел
-            //alert.sendKeys("hello");если надо чтот о напечатать в алерт
+            //alert.sendKeys("hello");если надо чтото напечатать в алерт
             return true;
         }
         return false;
     }
     //Alert alert = wait.until(ExpectedConditions.alertIsPresent());
+    public boolean isAlertPresent2(String message) {
+        WebDriverWait wait = new WebDriverWait(wd, Duration.ofSeconds(5));
+        Alert alert = wait.until(ExpectedConditions.alertIsPresent());
+        System.out.println(alert.getText());
 
+        if(alert!=null && alert.getText().contains(message)){
+            alert.accept();
+            return true;
+        }
+            return false;
+    }
+
+    public boolean isNoContactsHereDisplayed() {
+        WebDriverWait wait = new WebDriverWait(wd,Duration.ofSeconds(5));//у него есть разные ожидания
+
+        return wait.until(ExpectedConditions.textToBePresentInElement
+                (wd.findElement(By.cssSelector(".contact-page_message__2qafk>h1")),
+                        "No Contacts here!"));
+
+    }
 }

@@ -17,15 +17,16 @@ public class RegistrationTests extends TestBase{
         @Test
     public void registrationSuccess(){
         Random random = new Random();
-        int i = random.nextInt(1000);
+        int i = random.nextInt(1000)+100;//можно и без 1000
         //System.out.println(i);
 
         User user = new User().setEmail("oo220719"+i+"@gmail.com").setPassword("OO220719!oo");
-
         app.getHelperUser().openLoginRegistrationForm();
         app.getHelperUser().fillLoginRegistrationForm(user);
         app.getHelperUser().submitRegistration();
-        Assert.assertTrue(app.getHelperUser().isLogged(),".contact-page_message__2qafk");
+        Assert.assertTrue(app.getHelperUser().isLogged());//мэссадж тут только для нашей информации
+            Assert.assertTrue(app.getHelperUser().isNoContactsHereDisplayed());
+
     }
     @Test
     public void registrationWrongEmail () {
@@ -33,20 +34,19 @@ public class RegistrationTests extends TestBase{
         int i = random.nextInt(1000);
         System.out.println(i);
         User user = new User().setEmail("oo220719" + i + "gmail.com").setPassword("OO220719!oo");
-
         app.getHelperUser().openLoginRegistrationForm();
         app.getHelperUser().fillLoginRegistrationForm(user);
         app.getHelperUser().submitRegistration();
-        Assert.assertTrue(app.getHelperUser().isAlertPresent("Wrong email or password format"));
+        Assert.assertTrue(app.getHelperUser().isAlertPresent2("Wrong email or password format"));
 
     }
-    @Test
+    @Test (description = "Bug report N......")//write if we found mistake
     public void registrationWrongPassword(){
         User user = new User().setEmail("oo220719@gmail.com").setPassword("OO22");
         app.getHelperUser().openLoginRegistrationForm();
         app.getHelperUser().fillLoginRegistrationForm(user);
         app.getHelperUser().submitRegistration();
-        Assert.assertTrue(app.getHelperUser().isAlertPresent("Wrong email or password format"));
+        Assert.assertTrue(app.getHelperUser().isAlertPresent2("Wrong email or password format"));
     }
     @Test
     public void registrationRegistredUser(){

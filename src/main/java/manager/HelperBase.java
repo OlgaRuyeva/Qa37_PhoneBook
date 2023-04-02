@@ -6,11 +6,10 @@ import org.openqa.selenium.WebElement;
 import java.util.List;
 
 public class HelperBase {
-    WebDriver wd;
+    WebDriver wd;//after as we wrote it, we generate constructor right mause's button
 
     public HelperBase(WebDriver wd) {
-        this.wd = wd;
-    }
+        this.wd = wd;   }//это сгенерированный конструктор по WebDriver wd
     public void type(By locator, String text){
         WebElement element = wd.findElement(locator);
         element.click();
