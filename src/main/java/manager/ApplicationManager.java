@@ -17,6 +17,7 @@ public class ApplicationManager {
         wd.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));//позволяет в теч этого времени сделать тест
         wd.navigate().to("https://telranedu.web.app/");
 
+
         helperUser = new HelperUser(wd);
         helperContact = new HelperContact(wd);
 
