@@ -56,19 +56,7 @@ public class HelperUser extends HelperBase{
         click(By.xpath("//button[text()='Sign Out']"));
     }
 
-    public boolean isAlertPresent(String message) {
-        WebDriverWait wait = new WebDriverWait(wd, Duration.ofSeconds(5));
-        Alert alert = wait.until(ExpectedConditions.alertIsPresent());
-        System.out.println(alert.getText());
-        if(alert!=null && alert.getText().equals(message)){
 
-            alert.accept();//этим мы делаем клик на кнопку ок
-            //alert.dismiss();//этим мы кликаем на кнопку кенсел
-            //alert.sendKeys("hello");если надо чтото напечатать в алерт
-            return true;
-        }
-        return false;
-    }
     //Alert alert = wait.until(ExpectedConditions.alertIsPresent());
     public boolean isAlertPresent2(String message) {
         WebDriverWait wait = new WebDriverWait(wd, Duration.ofSeconds(5));

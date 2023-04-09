@@ -3,10 +3,12 @@ package manager;
 import models.Contact;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.List;
 
 public class HelperContact extends HelperBase{
     public HelperContact(WebDriver wd) {
@@ -27,7 +29,7 @@ public class HelperContact extends HelperBase{
 
     }
 
-    public void submit() {
+    public void save() {
         click(By.xpath("//*[text()='Save']"));
     }
     public String getMessage() {
@@ -40,5 +42,19 @@ public class HelperContact extends HelperBase{
 
     public void back() {
         wd.navigate().back();
+    }
+
+    public boolean isContactAddedByPhone(String phone) {
+       List<WebElement> list = wd.findElements(By.cssSelector("h3"));//foreach обходим все h3 и ищем equals
+        for (WebElement el:list) {
+            if(el.getText().equals(phone)){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean isAddPageStillDisplayed() {
+        return isElementPresent(By.cssSelector("a.active[href='/add']"));
     }
 }
