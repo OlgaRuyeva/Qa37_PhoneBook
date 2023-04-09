@@ -55,7 +55,7 @@ public class AddNewContacts extends TestBase {
 @Test
     public void addNewContactWrongName(){
     Contact contact = Contact.builder()
-            .name("")
+            .name(" ")
             .lastName("Savina")
             .phone("1234567890")
             .email("as@a")
@@ -132,11 +132,11 @@ public class AddNewContacts extends TestBase {
     }
 
 
-   @AfterMethod
+   /*  @AfterMethod
     public void postConditionBack() {
         app.getHelperContact().back();
     }
-        
+    */
     }
 
 
