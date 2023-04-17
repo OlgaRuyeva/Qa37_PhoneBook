@@ -1,0 +1,6 @@
+14:36:17.607  INFO  manager.ApplicationManager - All tests run in Chrom Browser
+14:36:18.544  INFO  manager.ApplicationManager - The link ------>https://telranedu.web.app/home
+14:36:24.086  INFO  tests.TestBase - Name of method--->addContactSuccessAllFields
+14:36:24.088  INFO  tests.TestBase - Start test wiht name 'addContactSuccess'
+14:36:24.088  INFO  tests.TestBase - Test data--- 'Random, all fields'
+14:36:26.803  INFO  tests.TestBase - Assert check is Element button 'Phone' present

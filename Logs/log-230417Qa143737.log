@@ -1,0 +1,25 @@
+14:37:40.494  INFO  manager.ApplicationManager - All tests run in Chrom Browser
+14:37:41.368  INFO  manager.ApplicationManager - The link ------>https://telranedu.web.app/home
+14:37:46.914  INFO  tests.TestBase - Name of method--->addContactSuccessAllFields
+14:37:46.917  INFO  tests.TestBase - Start test wiht name 'addContactSuccess'
+14:37:46.917  INFO  tests.TestBase - Test data--- 'Random, all fields'
+14:37:50.360  INFO  tests.TestBase - Assert check is Element button 'Phone' present
+14:37:50.364  INFO  tests.TestBase - Name of method--->addContactSuccessRequiredFields
+14:37:50.365  INFO  tests.TestBase - Test data--- 'Random, RequiredFields'
+14:38:07.156  INFO  tests.TestBase - Assert check is Element button 'Phone' present
+14:38:07.158  INFO  tests.TestBase - Name of method--->addNewContactWrongAddress
+14:38:07.158  INFO  tests.TestBase - Test data--- 'Random, WrongAddress '
+14:38:08.170  INFO  tests.TestBase - Assert check is AddPageStillDisplayed
+14:38:08.171  INFO  tests.TestBase - Name of method--->addNewContactWrongEmail
+14:38:08.172  INFO  tests.TestBase - Test data--- 'Random,WrongEmail '
+14:38:09.722  INFO  tests.TestBase - Assert check is alert present with error text 'Email not valid: must be a well-formed email address'
+14:38:09.723  INFO  tests.TestBase - Name of method--->addNewContactWrongLastName
+14:38:09.724  INFO  tests.TestBase - Test data--- 'Random, WrongLastName '
+14:38:11.078  INFO  tests.TestBase - Assert check is AddPageStillDisplayed
+14:38:11.079  INFO  tests.TestBase - Name of method--->addNewContactWrongName
+14:38:11.080  INFO  tests.TestBase - Test data--- 'Random, WrongName '
+14:38:12.041  INFO  tests.TestBase - Assert check is AddPageStillDisplayed
+14:38:12.042  INFO  tests.TestBase - Name of method--->addNewContactWrongPhone
+14:38:12.043  INFO  tests.TestBase - Test data--- 'Random,WrongPhone '
+14:38:13.494  INFO  tests.TestBase - Assert check is alert present with error text 'Phone not valid: Phone number " +
+                                  "must contain only digits! And length min 10, max 15!'
