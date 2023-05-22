@@ -19,6 +19,7 @@ public class HelperUser extends HelperBase{
                                                            //xpath "//a[text()='LOGIN']"
        // loginTab.click();
         click(By.cssSelector("a[href='/login']"));
+
     }
     public void fillLoginRegistrationForm(String email,String password){
         //WebElement emailInput = wd.findElement(By.name("email"));
@@ -32,16 +33,21 @@ public class HelperUser extends HelperBase{
         //passwordInput.click();
         //passwordInput.clear();
         //passwordInput.sendKeys(password);
-        type(By.xpath("//*[@name ='password']"),password);
+        type(By.xpath("//input[last()]"),password);
 
     }
-    public void fillLoginRegistrationForm(User user){
+    /*public void fillLoginRegistrationForm(User user){
         type(By.name("email"), user.getEmail());
         type(By.xpath("//*[@name ='password']"), user.getPassword());
+    }     */
 
+    public void fillLoginRegistrationForm(User user){
+        type(By.name("email"), user.getEmail());
+        type(By.xpath("//input[last()]"), user.getPassword());
     }
-    public void submitLogin(){
 
+
+    public void submitLogin(){
         click(By.xpath("//*[text()='Login']"));
     }
     public void submitRegistration(){
@@ -71,7 +77,7 @@ public class HelperUser extends HelperBase{
     }
 
     public boolean isNoContactsHereDisplayed() {
-        WebDriverWait wait = new WebDriverWait(wd,Duration.ofSeconds(5));//у него есть разные ожидания
+        WebDriverWait wait = new WebDriverWait(wd,Duration.ofSeconds(7));//у него есть разные ожидания
 
         return wait.until(ExpectedConditions.textToBePresentInElement
                 (wd.findElement(By.cssSelector(".contact-page_message__2qafk>h1")),

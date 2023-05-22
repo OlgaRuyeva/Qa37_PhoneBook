@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5a7f000a-d028-4b8a-a687-0b186798c114" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../.idea/src.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../main/java/manager/DataProviderContact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../main/java/manager/DataProviderUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../main/java/manager/ListenerWD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../main/main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../resources/contacts.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../resources/data.csv.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../resources/test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../resources/testng.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Logs/log-230417Qa131123.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Logs/log-230417Qa132233.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Logs/log-230417Qa133356.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Logs/log-230417Qa133855.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Logs/log-230417Qa134344.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Logs/log-230417Qa135342.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Logs/log-230417Qa135610.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Logs/log-230417Qa143614.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Logs/log-230417Qa143737.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Logs/log-230417Qa143923.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Logs/log-230417Qa143959.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../main/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../main/java/manager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../main/java/manager/HelperUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../main/java/manager/HelperUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AddNewContacts.java" beforeDir="false" afterPath="$PROJECT_DIR$/AddNewContacts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/RegistrationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RemoveContactTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/RemoveContactTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/AddNewContacts.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/AddNewContacts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/RegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/RegistrationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/RemoveContactTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/RemoveContactTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../screenshots/screen-1135.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../screenshots/screen-1396.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../screenshots/screen-1683.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../screenshots/screen-btn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../screenshots/screen.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="2PC73oAoCbgeH7k2jp4bAj308fI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/QA37/Qa37_PhoneBook/src/test/java/tests"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5a7f000a-d028-4b8a-a687-0b186798c114" name="Changes" comment="" />
+      <created>1682949012767</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1682949012767</updated>
+    </task>
+    <servers />
+  </component>
+</project>

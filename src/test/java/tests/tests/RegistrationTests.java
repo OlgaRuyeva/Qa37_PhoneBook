@@ -1,4 +1,4 @@
-package tests;
+package tests.tests;
 
 import models.User;
 import org.testng.Assert;
@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import java.util.Random;
 
-public class RegistrationTests extends TestBase{
+public class RegistrationTests extends TestBase {
     @BeforeMethod
     public void preCondition(){
         if (app.getHelperUser().isLogged()){

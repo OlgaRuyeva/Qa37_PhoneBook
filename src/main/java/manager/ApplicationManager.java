@@ -3,6 +3,8 @@ package manager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.events.EventFiringDecorator;
+import org.openqa.selenium.support.events.WebDriverListener;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,7 +19,11 @@ public class ApplicationManager {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
         wd = new ChromeDriver(options);//open browser
-        logger.info("All tests run in Chrom Browser");
+        logger.info("All tests run in Chrome Browser");
+
+        WebDriverListener listener = new ListenerWD();
+        wd= new EventFiringDecorator<>(listener).decorate(wd);
+
         wd.manage().window().maximize();//раскрытие на полный экран
         wd.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));//позволяет в теч этого времени сделать тест
         wd.navigate().to("https://telranedu.web.app/");

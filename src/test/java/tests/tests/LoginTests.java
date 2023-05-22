@@ -1,18 +1,12 @@
-package tests;
+package tests.tests;
 
 import manager.DataProviderUser;
 import models.User;
-import org.slf4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-
-public class LoginTests extends TestBase{
+public class LoginTests extends TestBase {
     @BeforeMethod
     public void preCondition(){
         if (app.getHelperUser().isLogged()){

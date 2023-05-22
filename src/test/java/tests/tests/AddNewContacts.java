@@ -1,13 +1,10 @@
-package tests;
+package tests.tests;
 
 import manager.DataProviderContact;
 import models.Contact;
 import models.User;
-import org.slf4j.Logger;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.util.Random;
